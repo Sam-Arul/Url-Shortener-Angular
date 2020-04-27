@@ -1,0 +1,14 @@
+<div class="container">
+
+    <div class="row">
+        <ul  >
+            <li  *ngFor="let url of urlList">
+                <a [href]="url.long">{{url.short}}</a>
+                
+
+            </li>
+        
+        </ul>
+       
+    </div>
+</div>

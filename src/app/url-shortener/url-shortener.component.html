@@ -1,0 +1,15 @@
+<div class="container">
+    <form  [formGroup]='urlForm' (click)='sendUrl()'>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <input type="text" class='form-control' formControlName='longUrl'>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <input type="submit" class="form-control btn btn-primary" value="submit">
+                </div>
+            </div>
+    </form>
+</div>
