@@ -10,9 +10,12 @@ export class UrlService {
   constructor(private http:HttpClient) { }
 
   postUrl(data):Observable<any>{
-    return this.http.post("https://sam-url-shortener.herokuapp.com/",data)
+    return this.http.post("http://localhost:3000",data)
   }
   geturl():Observable<any>{
-    return this.http.get("https://sam-url-shortener.herokuapp.com/url")
+    return this.http.get("http://localhost:3000/url")
+  }
+  redirecturl(data):Observable<any>{
+    return this.http.get("http://localhost:3000/url/"+data)
   }
 }

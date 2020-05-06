@@ -20,4 +20,9 @@ urlList;
   ngOnInit(): void {
   }
 
+
+  redirectPage(shortUrl){
+    console.log(shortUrl)
+      this.urlService.redirecturl(shortUrl).subscribe()
+  }
 }
